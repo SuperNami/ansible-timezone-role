@@ -1,0 +1,9 @@
+---
+- name: timezone
+  hosts: all
+  user: root
+  become: true
+  roles:
+  - timezone
+  vars_files:
+  - vars/timezone.yml
